@@ -1,0 +1,9 @@
+body {
+    background-image: url('/static/liga_app/images/futbol_cancha.jpg');
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija el fondo al desplazarse */
+    background-position: center; /* Centra la imagen */
+    font-family: Arial, sans-serif; /* Opcional: ajusta la fuente de tu página */
+    color: #ffffff; /* Ajusta el color del texto si es necesario */
+}

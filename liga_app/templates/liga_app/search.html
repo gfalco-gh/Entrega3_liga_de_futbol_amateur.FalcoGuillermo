@@ -1,0 +1,22 @@
+{% extends 'liga_app/base.html' %}
+
+{% block title %}Buscar Equipos{% endblock %}
+
+{% block content %}
+<h2>Buscar Equipos</h2>
+<form method="get">
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+
+{% if teams %}
+    <h3>Resultados:</h3>
+    <ul>
+        {% for team in teams %}
+            <li>{{ team.name }} - Liga: {{ team.league.name }}</li>
+        {% endfor %}
+    </ul>
+{% elif teams == [] %}
+    <p>No se encontraron equipos.</p>
+{% endif %}
+{% endblock %}
