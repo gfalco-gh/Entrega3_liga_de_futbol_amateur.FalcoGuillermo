@@ -16,7 +16,7 @@
             <li>{{ team.name }} - Liga: {{ team.league.name }}</li>
         {% endfor %}
     </ul>
-{% elif teams == [] %}
+{% elif not teams %}
     <p>No se encontraron equipos.</p>
 {% endif %}
 {% endblock %}
