@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'liga_app'
+    'liga_app',
+    'accounts',
+    'blog',
+    'messaging',
+    'ckeditor', # Para texto enriquecido
 ]
 
 MIDDLEWARE = [
@@ -122,3 +126,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+import os
+
+# Configuración para archivos media (subidos por los usuarios)
+MEDIA_URL = '/media/'  # URL base para acceder a archivos media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Carpeta donde se almacenan
+

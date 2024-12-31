@@ -6,3 +6,16 @@
 <h1>Bienvenido a la Liga Amateur de Fútbol</h1>
 <p>Utiliza el menú de navegación para registrar equipos, jugadores y partidos o buscar información.</p>
 {% endblock %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+</head>
+<body>
+    <h1>Bienvenido a la Liga de Fútbol Amateur</h1>
+    <p>¡Hola, {{ user.username }}!</p>
+    <a href="{% url 'logout' %}">Cerrar sesión</a>
+</body>
+</html>
